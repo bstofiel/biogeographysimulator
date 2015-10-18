@@ -69,6 +69,6 @@ class IslandparametersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def islandparameter_params
-      params[:islandparameter]
+      params[:islandparameter].permit(:name, :number_of_species, :number_of_islands, :island_width, :island_length, :distance_from_mainland, :number_of_generations )
     end
 end
