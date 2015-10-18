@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150913062718) do
+ActiveRecord::Schema.define(version: 20151018182433) do
+
+  create_table "islandparameters", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "user_id"
+    t.integer  "number_of_species"
+    t.integer  "island_width"
+    t.integer  "island_length"
+    t.integer  "number_of_islands"
+    t.integer  "distance_from_mainland"
+    t.integer  "number_of_generations"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

@@ -1,0 +1,17 @@
+<%= form_for(@islandparameter) do |f| %>
+  <% if @islandparameter.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@islandparameter.errors.count, "error") %> prohibited this islandparameter from being saved:</h2>
+
+      <ul>
+      <% @islandparameter.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  user_id: 1
+  number_of_species: 1
+  island_width: 1
+  island_length: 1
+  number_of_islands: 1
+  distance_from_mainland: 1
+  number_of_generations: 1
+
+two:
+  name: MyString
+  user_id: 1
+  number_of_species: 1
+  island_width: 1
+  island_length: 1
+  number_of_islands: 1
+  distance_from_mainland: 1
+  number_of_generations: 1
