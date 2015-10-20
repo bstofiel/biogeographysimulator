@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Mainlands</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Project</th>
+      <th>Number of species</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mainlands.each do |mainland| %>
+      <tr>
+        <td><%= mainland.name %></td>
+        <td><%= mainland.project_id %></td>
+        <td><%= mainland.number_of_species %></td>
+        <td><%= link_to 'Show', mainland %></td>
+        <td><%= link_to 'Edit', edit_mainland_path(mainland) %></td>
+        <td><%= link_to 'Destroy', mainland, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mainland', new_mainland_path %>

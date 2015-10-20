@@ -15,9 +15,10 @@ group :development do
   gem 'spring'
 end
 gem 'bootstrap-sass'
+gem 'bootstrap-generators', '~> 3.3.4'
 gem 'devise'
 gem 'high_voltage'
-gem "chartkick"
+gem 'chartkick'
 group :development do
   gem 'better_errors'
   gem 'hub', :require=>nil

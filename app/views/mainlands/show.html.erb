@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @mainland.name %>
+</p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @mainland.project_id %>
+</p>
+
+<p>
+  <strong>Number of species:</strong>
+  <%= @mainland.number_of_species %>
+</p>
+
+<%= link_to 'Edit', edit_mainland_path(@mainland) %> |
+<%= link_to 'Back', mainlands_path %>

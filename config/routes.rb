@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  root to: 'visitors#index'
+  resources :islands
+  resources :mainlands
+  resources :projects
+  root to: 'projects#index'
   devise_for :users
   resources :users
-  resources :islandparameters
 end
