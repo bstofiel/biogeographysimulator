@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @island.name %>
+</p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @island.project_id %>
+</p>
+
+<p>
+  <strong>Width:</strong>
+  <%= @island.width %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @island.length %>
+</p>
+
+<p>
+  <strong>Distance:</strong>
+  <%= @island.distance %>
+</p>
+
+<%= link_to 'Edit', edit_island_path(@island) %> |
+<%= link_to 'Back', islands_path %>
