@@ -14,11 +14,13 @@ class ProjectsController < ApplicationController
 
   # GET /projects/new
   def new
+    @mainlands = Mainland.all.pluck(:name, :id)
     @project = Project.new
   end
 
   # GET /projects/1/edit
   def edit
+    @mainlands = Mainland.all.pluck(:name, :id)
   end
 
   # POST /projects

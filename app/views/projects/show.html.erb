@@ -7,7 +7,12 @@
 
 <p>
   <strong>User:</strong>
-  <%= @project.user_id %>
+  <%= @project.user.name %>
+</p>
+
+<p>
+  <strong>Mainland:</strong>
+  <%= @project.mainland.name %>
 </p>
 
 <%= link_to 'Edit', edit_project_path(@project) %> |

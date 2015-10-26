@@ -15,10 +15,17 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
+  
   <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
+    <%= f.label :mainland %><br>
+    <%= f.select(@mainlands) %>
   </div>
+
+  <div class="field">
+    <%= f.label :island %><br>
+    <%= f.text_field :name %>
+  </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>
